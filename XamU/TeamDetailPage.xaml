@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamU.TeamDetailPage">
+
+		<ContentPage.ToolbarItems>
+    	<ToolbarItem Name="MenuItem1" Order="Primary" Text="Delete" Priority="0" Activated="Handle_Activated" />
+    </ContentPage.ToolbarItems>
+	<ScrollView>
+		<StackLayout>
+			<Image Source="{Binding Icon}" HorizontalOptions="FillAndExpand" Aspect="AspectFit" />
+			<Label Text="{Binding Name}" FontSize="Large" HorizontalOptions="CenterAndExpand"/>
+			<Label Text="{Binding Title}" FontSize="Small" HorizontalOptions="CenterAndExpand"/>
+			<Label Text="{Binding Description}" Margin="5,0,5,0" FontSize="Medium" HorizontalOptions="StartAndExpand"/>
+		</StackLayout>
+	</ScrollView>
+</ContentPage>

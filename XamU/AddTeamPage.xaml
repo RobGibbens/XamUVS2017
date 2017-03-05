@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	Title="Add Team Member"
+	x:Class="XamU.AddTeamPage">
+	<ScrollView>
+		<StackLayout>
+			<Label Margin="5" Text="Add a team member" FontSize="Large" HorizontalOptions="CenterAndExpand"  />
+			<Entry Margin="5" Placeholder="Name" x:Name="name" />
+			<Entry Margin="5" Placeholder="Icon" x:Name="icon" Keyboard="Default"  />
+			<Entry Margin="5" Placeholder="Title" x:Name="title" />
+			<StackLayout BackgroundColor="Gray" Padding="1" Margin="5">
+				<Editor HeightRequest="300" BackgroundColor="White" x:Name="description" />
+			</StackLayout>
+			<Button Text="Save" Margin="5" BackgroundColor="Green" TextColor="White" Clicked="Handle_Clicked" />
+		</StackLayout>
+	</ScrollView>
+</ContentPage>
