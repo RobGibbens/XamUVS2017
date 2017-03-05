@@ -14,6 +14,7 @@ namespace XamU.UITests
 		IApp app;
 		Platform platform;
 
+
 		public Tests(Platform platform)
 		{
 			this.platform = platform;

@@ -15,6 +15,9 @@ namespace XamU.iOS
 
 			// Code for starting up the Xamarin Test Cloud Agent
 
+
+			Xamarin.Calabash.Start();
+
 			LoadApplication(new App());
 			return base.FinishedLaunching(app, options);
 		}
