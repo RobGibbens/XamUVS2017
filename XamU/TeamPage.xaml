@@ -8,7 +8,7 @@
     	<ToolbarItem Name="MenuItem1" Order="Primary" Text="Add" Priority="0" Activated="Handle_Activated" />
     </ContentPage.ToolbarItems>
 	
-	<ListView ItemsSource="{Binding TeamMembers}" ItemSelected="Handle_ItemSelected">
+	<ListView ItemsSource="{Binding TeamMembers}" ItemSelected="Handle_ItemSelected" AutomationId="teamList">
 		<ListView.ItemTemplate>
 			<DataTemplate>
 				<ImageCell ImageSource="{Binding Icon}" Text="{Binding Name}" Detail="{Binding ShortDescription}" />

@@ -14,7 +14,6 @@ namespace XamU.UITests
 		IApp app;
 		Platform platform;
 
-
 		public Tests(Platform platform)
 		{
 			this.platform = platform;
@@ -26,13 +25,5 @@ namespace XamU.UITests
 			app = AppInitializer.StartApp(platform);
 		}
 
-		[Test]
-		public void WelcomeTextIsDisplayed()
-		{
-			AppResult[] results = app.WaitForElement(c => c.Marked("Welcome to Xamarin Forms!"));
-			app.Screenshot("Welcome screen.");
-
-			Assert.IsTrue(results.Any());
-		}
 	}
 }
