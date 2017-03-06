@@ -10,12 +10,18 @@ namespace XamU.UITests
 	{
 		public static IApp StartApp(Platform platform)
 		{
+            
 			if (platform == Platform.Android)
 			{
-				return ConfigureApp.Android.StartApp();
-			}
+                var path = @"..\..\com.xamarin.xamu.apk";
+				//return ConfigureApp.Android.StartApp();
+                return ConfigureApp.Android
+                    .ApkFile(path)
+                    .StartApp();
 
-			return ConfigureApp.iOS.StartApp();
+            }
+
+            return ConfigureApp.iOS.StartApp();
 		}
 	}
 }
